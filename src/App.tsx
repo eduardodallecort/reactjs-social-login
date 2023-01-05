@@ -87,6 +87,7 @@ const App = () => {
           scope="openid profile email"
           discoveryDocs="claims_supported"
           access_type="offline"
+          typeResponse="idToken"
           onResolve={({ provider, data }: IResolveParams) => {
             setProvider(provider);
             setProfile(data);
